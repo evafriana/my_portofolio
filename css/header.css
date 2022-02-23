@@ -20,11 +20,11 @@
 }
 
 .youtube {
-  color: var(--color-bgdark);
+  color: var(--social-youtube);
 }
 
 .youtube:hover {
-  color: var(--color-blue);
+  color: var(--color-bgdark);
 }
 
 @media screen and (min-width: 768px) {

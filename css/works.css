@@ -22,12 +22,16 @@
   font-size: 14px;
   padding: 0.7rem 1.5rem;
   margin-left: 1rem;
-  background-color: var(--color-bgdark);
+  background-color: var(--color-text);
   transition: all 0.2s ease-in-out;
 }
 
 .work-link:hover {
   transform: scale(1.1);
+}
+
+.work-link a {
+  color: var(--color-bglight);
 }
 
 .work {
@@ -101,12 +105,12 @@
   }
 
   .image-wrap {
-    width: 40vw;
+    width: 50%;
   }
 
   .image-mob {
-    width: 22vw;
-    margin-left: 2rem;
+    width: 17%;
+    margin-right: 5rem;
   }
 
   .work-wrapimg {
@@ -114,7 +118,7 @@
   }
 
   .image-home {
-    width: 60vw;
+    width: 80%;
     margin-top: 7rem;
   }
 }
@@ -125,10 +129,11 @@
   }
 
   .image-mob {
-    width: 17vw;
+    width: 17%;
+    margin-right: 10rem;
   }
 
   .image-home {
-    width: 50vw;
+    width: 70%;
   }
 }
