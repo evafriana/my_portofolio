@@ -49,6 +49,8 @@ footer {
   transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
 }
 
+/* media query  */
+
 @media screen and (max-width: 768px) {
   .fa-linkedin-in {
     color: var(--social-linkedin);
