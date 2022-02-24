@@ -27,6 +27,8 @@
   color: var(--color-bgdark);
 }
 
+/* media query  */
+
 @media screen and (min-width: 768px) {
   .header {
     max-width: 80%;

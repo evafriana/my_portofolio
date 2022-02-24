@@ -2,16 +2,27 @@
   display: none;
 }
 .contact {
-  padding: 1rem;
-  background-color: var(--color-blue);
+  padding: 0.6rem;
+  background-color: var(--color-text);
+  font-size: 14px;
+  color: white;
 }
+
+/* media query  */
 
 @media screen and (min-width: 768px) {
   .navbar-deskop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    padding: 2.5rem 0;
+    background-color: var(--color-bg);
+    z-index: 10;
   }
 
   .nav-links {
@@ -20,5 +31,87 @@
 
   .nav-link {
     padding-right: 5rem;
+  }
+
+  /* Page Loader */
+  .js .loading::before,
+  .js .loading::after {
+    content: "";
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .js .loading::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+  }
+
+  .js .loading::after {
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background: var(--color-link);
+    animation: loaderAnim 0.7s linear infinite alternate forwards;
+  }
+
+  @keyframes loaderAnim {
+    to {
+      opacity: 1;
+      transform: scale3d(0.5, 0.5, 1);
+    }
+  }
+
+  .content__item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    counter-increment: itemcounter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .contentlink {
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+  }
+
+  .contentlink::before,
+  .contentlink::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .contentlink::before {
+    content: "";
+    /* show by default */
+  }
+
+  .contentlink--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+  }
+
+  .contentlink--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
   }
 }

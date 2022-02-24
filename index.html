@@ -35,8 +35,8 @@
   </head>
   <body>
     <section class="navbar-mobile">
-      <input type="checkbox" id="hamburger" class="hamburger" />
-      <label for="hamburger">
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger" class="hamburger">
         <div></div>
         <div></div>
         <div></div>
@@ -52,35 +52,74 @@
           </li>
         </div>
         <div class="media">
-          <li><a href="https://github.com/evafriana">GitHub</a></li>
-          <li>
-            <a
-              class="insta-link"
-              href="https://www.linkedin.com/in/eva-afriana/"
-              >LinkedIn</a
-            >
-          </li>
+          <ul class="icon-container">
+            <li class="icon-item">
+              <a
+                href="https://github.com/evafriana"
+                target="_blank"
+                class="icon-link"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="icon-item">
+              <a
+                href="https://www.youtube.com/channel/UCaOvehDmx4K2POFMOybuMSg"
+                target="_blank"
+                class="icon-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="icon-item">
+              <a
+                href="https://www.linkedin.com/in/eva-afriana/"
+                target="_blank"
+                class="icon-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </ul>
     </section>
     <div class="container">
-      <nav class="navbar-deskop">
-        <ul class="nav-links">
-          <li class="nav-link">
-            <a href="#works">Works</a>
-          </li>
-          <li class="nav-link">
-            <a href="https://github.com/evafriana" target="_blank">GitHub</a>
-          </li>
-          <li class="nav-link">
-            <a href="https://www.linkedin.com/in/eva-afriana/">LinkedIn</a>
-          </li>
-        </ul>
-        <a class="effect1" href="mailto:eva.afriana@outlook.com?subject=Hi!">
-          Contact Me
-          <span class="bg"></span>
-        </a>
-      </nav>
+      <div class="sticky">
+        <nav class="navbar-deskop">
+          <ul class="nav-links">
+            <li class="nav-link">
+              <span class="content__item">
+                <a class="contentlink contentlink--metis" href="#works"
+                  >Works</a
+                >
+              </span>
+            </li>
+
+            <li class="nav-link">
+              <span class="content__item">
+                <a
+                  class="contentlink contentlink--metis"
+                  href="https://github.com/evafriana"
+                  target="_blank"
+                  >GitHub</a
+                ></span
+              >
+            </li>
+            <li class="nav-link">
+              <span class="content__item">
+                <a
+                  class="contentlink contentlink--metis"
+                  href="https://www.linkedin.com/in/eva-afriana/"
+                  target="_blank"
+                  >LinkedIn</a
+                ></span
+              >
+            </li>
+          </ul>
+          <a class="effect1" href="mailto:eva.afriana@outlook.com?subject=Hi!">
+            Contact Me
+            <span class="bg"></span>
+          </a>
+        </nav>
+      </div>
       <header class="header">
         <h1 class="header-description">
           Hello! I am <span class="word">Eva</span>,
@@ -111,6 +150,7 @@
           <a
             class="youtube"
             href="https://www.youtube.com/channel/UCaOvehDmx4K2POFMOybuMSg"
+            target="_blank"
             >YouTube</a
           >.
         </p>
@@ -314,15 +354,30 @@
       </section>
     </div>
     <footer>
-      <ul class="icon-list">
+      <ul class="icon-container">
         <li class="icon-item">
-          <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+          <a
+            href="https://github.com/evafriana"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-github"></i
+          ></a>
         </li>
         <li class="icon-item">
-          <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+          <a
+            href="https://www.youtube.com/channel/UCaOvehDmx4K2POFMOybuMSg"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-youtube"></i
+          ></a>
         </li>
         <li class="icon-item">
-          <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+          <a
+            href="https://www.linkedin.com/in/eva-afriana/"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </li>
       </ul>
     </footer>
