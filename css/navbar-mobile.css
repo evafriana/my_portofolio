@@ -21,7 +21,7 @@
   clip-path: circle(200% at 100% -20%);
   -webkit-clip-path: circle(200% at 100% -20%);
   pointer-events: all;
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 .navlinks li {
